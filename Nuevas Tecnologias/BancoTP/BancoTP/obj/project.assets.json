@@ -12586,11 +12586,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ivan\\source\\repos\\BancoTP\\BancoTP\\BancoTP.csproj",
+      "projectUniqueName": "C:\\Users\\Ivan\\Desktop\\BancoTP\\BancoTP\\BancoTP.csproj",
       "projectName": "BancoTP",
-      "projectPath": "C:\\Users\\Ivan\\source\\repos\\BancoTP\\BancoTP\\BancoTP.csproj",
+      "projectPath": "C:\\Users\\Ivan\\Desktop\\BancoTP\\BancoTP\\BancoTP.csproj",
       "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ivan\\source\\repos\\BancoTP\\BancoTP\\obj\\",
+      "outputPath": "C:\\Users\\Ivan\\Desktop\\BancoTP\\BancoTP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

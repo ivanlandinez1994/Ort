@@ -18,28 +18,15 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
+    <nav class="navbar navbar-light" style="background-color: #008a81">
+        <!--
+        <a href=""><img id="logoHeader" src="~/images/Bank.png"></a>
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+            -->
+    </nav>
     <!--
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -54,7 +41,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    
+
                 </ul>
             </div>
         </div>
@@ -62,36 +49,36 @@
 
     <partial name="_CookieConsentPartial" />
         -->
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2019 - BancoTP</p>
-        </footer>
-    </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; 2019 - BancoTP</p>
+            </footer>
+        </div>
 
 
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
+        <environment include="Development">
+            <script src="~/lib/jquery/dist/jquery.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="~/js/site.js" asp-append-version="true"></script>
+        </environment>
+        <environment exclude="Development">
+            <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                    asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                    asp-fallback-test="window.jQuery"
+                    crossorigin="anonymous"
+                    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+            </script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+                    asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                    asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                    crossorigin="anonymous"
+                    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
+            </script>
+            <script src="~/js/site.min.js" asp-append-version="true"></script>
+        </environment>
 
-    @RenderSection("Scripts", required: false)
+        @RenderSection("Scripts", required: false)
 </body>
 </html>

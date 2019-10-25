@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="jumbotron">
+    <div class="container">
+        <a href="index.html">
+            <img id="logo" src="~/images/Bank.png">
+            <h2 class="display-3 text-center">Banco Garcadonia</h2>
+        </a>
+
+
+        <div class="container">
+            <div class="d-flex justify-content-center h-100">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">User - Sign In</h3>
+
+                    </div>
+                    <div class="card-body">
+                        <form id="frm">
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><img src="~/images/user.png"></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="username" name="user" />
+
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><img src="~/images/key.png"></span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="password" name="password" />
+                            </div>
+                            <div class="row align-items-center remember">
+                                <input type="checkbox">Recordarme
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Login" class="btn float-right login_btn" />
+                            </div>
+
+                            <div class="d-flex justify-content-center links sign">
+                                No tenés cuenta?<a href="#">Sign Up</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@{
+    var a = "1";
+}
+@section scripts{ 
+    <script>
+        $(document).ready(function () {
+            $("#frm").submit(function (e) {
+                e.preventDefault();
+                url = "@Url.Content("~/Access/Enter")"
+                parametros = $(this).serialize();
+
+                $.post(url, parametros, function (data){
+                    if (data == "1") {
+                        document.location.href = "@Url.Content("~/")";
+                    }
+                    else {
+                        alert(data)
+                    }
+                })
+            })
+        })
+    </script>
+}

@@ -11,20 +11,16 @@ namespace BancoTp
         private double saldo { get; set; }
         private Boolean activa { get; set; }
         private String documentoTitular { get; set; }
-        private String alias { get; set; }
-        private TipoMoneda tipoMoneda { get; set; }
+        private String alias { get; set; }        
         private DateTime fechaCreacion { get; set; }
         
-
-
         public Cuenta(String nombreTitular, String documentoTitular)
         {
             this.nombreTitular = nombreTitular;
             this.documentoTitular = documentoTitular;
             this.saldo = 0;
             this.activa = false;
-            this.alias = "";
-            this.setTipoMonedaDefault();
+            this.alias = documentoTitular;            
             this.fechaCreacion = new DateTime();
             this.setFechaCreacionDefault();
         }
@@ -33,12 +29,6 @@ namespace BancoTp
         {
             this.fechaCreacion = DateTime.Now;
         }
-
-        private void setTipoMonedaDefault()
-        {
-            this.tipoMoneda = TipoMoneda.PESOS;
-        }
-
     
     }
 

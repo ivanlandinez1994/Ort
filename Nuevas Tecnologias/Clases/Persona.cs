@@ -14,11 +14,10 @@ namespace BancoTp
         String contrasenia { get; }
         Rol rol { get; set; }
         Direccion direccion { get; set; }
-        Telefono telefono { get; set; }
+        String telefonoContacto { get; set; }
         String email { get; set; }
         DateTime fechaNacimiento { get; set; }
-        String genero { get; set; }
-        DateTime fechaAprobacion { get; set; }
+        String genero { get; set; }        
         Cuenta cuenta { get; set; }
 
         public Persona(String nombre, String apellido, String dni)
@@ -30,11 +29,10 @@ namespace BancoTp
             this.contrasenia = "";
             this.setDefaultRol();
             this.direccion = new Direccion();
-            this.telefono = new Telefono();
+            this.telefonoContacto = new telefonoContacto();
             this.email = "";
             this.fechaNacimiento = new DateTime(0, 0, 0);
-            this.genero = "";
-            this.fechaAprobacion= new DateTime(0, 0, 0);
+            this.genero = "";            
             this.cuenta = new Cuenta();
         }
 
